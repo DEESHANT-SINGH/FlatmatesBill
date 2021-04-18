@@ -1,0 +1,5 @@
+pip install fpdf    # To generate pdf with python
+
+pip install filestack-python     
+
+get api key for filestack from their site.
