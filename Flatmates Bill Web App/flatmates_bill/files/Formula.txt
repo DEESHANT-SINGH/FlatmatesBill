@@ -1,0 +1,35 @@
+Formula to calculate that how much the flatmate has to pay the bill.
+In proportion to the days he/she has stayed in the flat. 
+
+suppose,
+        Total bill amount = 120
+
+        So normally if we consider that they both have stayed equally so they have to pay
+        flatmate1 = 60
+        flatmate2 = 60
+
+        If flatmate1 has stayed 20 days in flat and flat2 has stayed 25 days in flat then,
+
+                        120
+            flatmate1    |     flatmate2
+Initally,       60       |         60
+                         |
+no_of_days,     20       |         25
+                         |
+Formula =       20       |         25               no_of_days_stayed_of_individual
+              _______    |      _________          __________________________________
+              20 + 25    |       20 + 25            Total no of days both have stayed
+                         |
+Result= Total_bill* 0.444|  Total_bill* 0.555                        |
+                         |
+      =     120 * 0.444  |    120 * 0.555  
+                         |
+      =       53.33      |       66.67
+
+                       
+120 = 53.33 + 66.67
+
+
+Formula To Calculate Individual bill = Total_bill_amount * no_of_days_stayed_of_individual
+                                                          __________________________________
+                                                           Total no of days both have stayed

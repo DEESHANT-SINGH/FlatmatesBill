@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="static/main.css" rel="stylesheet">
+</head>
+<body>
+<h2><img src="static/house.png" alt="Flatmate bill logo" width="50" height="50"> The Bill Form </h2>
+<p>Fill in the form and click the button to get the results below.</p>
+<form action="bill_form_page" method="post">
+    {{billform.amount.label}} {{billform.amount}}
+    <br>
+    {{billform.period.label}} {{billform.period}}
+    <hr>
+    <p>First Flatmate</p>
+    {{billform.name1.label}} {{billform.name1}}
+    <br>
+    {{billform.days_in_house1.label}} {{billform.days_in_house1}}
+    <hr>
+    <p>Second Flatmate</p>
+    {{billform.name2.label}} {{billform.name2}}
+    <br>
+    {{billform.days_in_house2.label}} {{billform.days_in_house2}}
+    <br>
+    {{billform.button}}
+    <br>
+    {% if result %}
+    <hr>
+    <fieldset>
+    {{name1}} pays = {{amount1}} 
+    <br>
+    {{name2}} pays = {{amount2}}
+    </fieldset>
+    {% endif %}
+</form>
+</body>
+</html>
