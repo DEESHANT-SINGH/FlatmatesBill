@@ -2,7 +2,7 @@ from flask.views import MethodView                     #MethodView is a class an
 from wtforms import Form, StringField, SubmitField     #wtform is a library & Form is a class which represents webform #StringField class is used to create a form of our webpage by using python code
 from flask import Flask, render_template, request                #Flask is a class that represents webapp
 from flatmates_bill import flat                         # Our code of flatmate's bill in CLI
-from filestack import Client
+
 
 app = Flask(__name__)              # We have instantiated the Flask class #__name__ is a string that contains a string of current python file i.e main.py
 
